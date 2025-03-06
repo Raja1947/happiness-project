@@ -1,13 +1,12 @@
 import React from "react";
 import hero from "../../assets/hero.png";
 import arrow from "../../assets/arrow-right-circle.png";
-import msg from "../../assets/msg.png";
+// import msg from "../../assets/msg.png";
 
 const Hero = () => {
   return (
-    <div className="relative w-full bg-white py-10 px-6 md:px-12 overflow-hidden">
+    <div className=" w-full  py-10 px-6 md:px-12 overflow-hidden bg-red-200">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
           <p className="text-[25px] font-semibold text-[#2430A0] tracking-wide">
