@@ -4,7 +4,7 @@ import teachersData from "./TeamsData"; // Import the data
 
 const Team = () => {
   return (
-    <div className="w-full py-10 px-4 sm:px-6 md:px-12 relative">
+    <div className="w-full py-10 px-6  md:px-12 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-[28px] sm:text-[34px] md:text-[39px] font-semibold text-[#2430A0] text-center md:text-start mb-8">
