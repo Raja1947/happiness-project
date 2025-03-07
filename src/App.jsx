@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Reason from './components/Reasons/Reason'
 import Teaching from './components/Teaching/Teaching'
+import Team from './components/Teams/Teams'
 import Testimonials from './components/Testimonials/Testimonials'
 
 
@@ -20,6 +21,7 @@ function App() {
     <CategoryGrid/>
     <Reason/>
     <Testimonials/>
+    <Team/>
    </div>
   )
 }
