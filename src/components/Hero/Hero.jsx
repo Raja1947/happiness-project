@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../../assets/hero.png";
 import arrow from "../../assets/arrow-right-circle.png";
-import messageIcon from "../../assets/msg.png"; // Import the message icon
+import messageIcon from "../../assets/msg.png"; 
 
 const Hero = () => {
   return (
