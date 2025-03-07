@@ -1,5 +1,6 @@
 import React from "react";
 import cardImage from "../../assets/classes.png";
+import { CiBookmark } from "react-icons/ci";
 
 const Classes = () => {
   return (
@@ -48,8 +49,8 @@ const Classes = () => {
                 <span className="absolute top-2 left-2 bg-[#FFFFFF] text-xs text-black font-semibold px-2 py-1 rounded">
                   60% OFF
                 </span>
-                <button className="absolute top-2 right-2 bg-[#FFFFFF] p-1 rounded-full shadow-md">
-                  ❤️
+                <button className="absolute top-2 right-2 bg-[#FFFFFF] p-1 rounded-sm shadow-md hover:text-[#E25753]">
+                  <CiBookmark />
                 </button>
               </div>
 
