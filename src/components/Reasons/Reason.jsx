@@ -10,7 +10,7 @@ const Reason = () => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {reasonsData.map((reason) => (
-          <div
+          <div  
             key={reason.id}
             className="flex flex-col items-center md:items-start text-center md:text-start  p-6 shadow-md  hover:shadow-xl rounded-lg transition-transform transform hover:scale-105 bg-white"
           >
