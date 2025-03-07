@@ -22,7 +22,7 @@ const Email = () => {
             placeholder="Enter your email"
             className="w-full sm:w-auto flex-1 px-4 py-3 border border-white bg-transparent placeholder-white text-white rounded-full outline-none"
           />
-          <button className="bg-white text-[#FC7753] font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-gray-200 transition">
+          <button className="bg-white text-[#FC7753] font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-gray-200 transition cursor-pointer">
             GET STARTED <img src={arrow} alt="Arrow" className="w-5 h-5" />
           </button>
         </div>

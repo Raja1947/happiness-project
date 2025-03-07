@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegComment } from "react-icons/fa6";
-import data from "./BlogData"; 
+import data from "./BlogData";
 
 const Blog = () => {
   return (
@@ -8,13 +8,13 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-  <h2 className="text-left sm:text-center md:text-left text-[30px] sm:text-[39px] font-semibold text-[#2430A0]">
-    Our Blogs{" "}
-    <span className="text-[#E25753] text-[14px] underline ml-2 cursor-pointer">
-      SHOW ALL
-    </span>
-  </h2>
-</div>
+          <h2 className="text-left sm:text-center md:text-left text-[30px] sm:text-[39px] font-semibold text-[#2430A0]">
+            Our Blogs{" "}
+            <span className="text-[#E25753] text-[14px] underline ml-2 cursor-pointer">
+              SHOW ALL
+            </span>
+          </h2>
+        </div>
 
         {/* Blog Grid (Only 3 Blogs) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -31,7 +31,7 @@ const Blog = () => {
                   className="w-full h-[200px] sm:h-[230px] object-cover rounded-md"
                 />
                 {/* Category Tag */}
-                <span className="absolute top-3 left-3 bg-red-100 text-[#E25753] text-xs font-semibold px-3 py-1 rounded-sm">
+                <span className="absolute top-3 left-3 bg-red-100 text-[#E25753] text-xs font-semibold px-3 py-2 rounded-sm">
                   {blog.category}
                 </span>
               </div>

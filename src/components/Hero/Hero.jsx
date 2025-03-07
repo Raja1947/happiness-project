@@ -1,10 +1,11 @@
 import React from "react";
 import hero from "../../assets/hero.png";
 import arrow from "../../assets/arrow-right-circle.png";
+import messageIcon from "../../assets/msg.png"; // Import the message icon
 
 const Hero = () => {
   return (
-    <div className="w-full py-10 px-6 md:px-12 overflow-hidden relative">
+    <div className="w-full py-14 md:py-15 px-6 md:px-12 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
@@ -24,7 +25,7 @@ const Hero = () => {
               placeholder="Enter your email"
               className="w-1/2 px-4 py-2 text-[#2430A0] text-[14px] focus:outline-none"
             />
-            <button className="w-1/2 flex items-center justify-center border border-[#2430A0] rounded-full gap-2 bg-[#2430A0] text-white text-[12px] sm:text-[14px] px-6 py-2 font-semibold hover:bg-[#1A237E] transition">
+            <button className="w-1/2 flex items-center justify-center border border-[#2430A0] rounded-full gap-2 bg-[#2430A0] text-white text-[12px] sm:text-[14px] px-6 py-2 font-semibold hover:bg-[#1A237E] transition cursor-pointer">
               START EXPLORING
               <img src={arrow} alt="arrow" className="w-5 h-5" />
             </button>
@@ -45,6 +46,11 @@ const Hero = () => {
           />
         </div>
       </div>
+
+      {/* Message Icon Inside Hero Section */}
+      <button className="absolute bottom  left-5/6 transform -translate-x-1/2  p-2 z-10 cursor-pointer">
+        <img src={messageIcon} alt="Message" className="w-14 h-14" />
+      </button>
     </div>
   );
 };

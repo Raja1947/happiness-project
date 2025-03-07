@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Pangrams";
+  src: url("/Fonts/PPPangramSansRounded-semibold.woff2") format("woff2"),
+    url("/Fonts/PPPangramSansRounded-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Pangrams", sans-serif;
+}

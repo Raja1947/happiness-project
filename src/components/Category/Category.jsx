@@ -19,7 +19,7 @@ const CategoryGrid = () => {
                 <img
                   src={category.img}
                   alt={category.name}
-                  className="w-full h-full object-cover"  
+                  className="w-full h-full object-cover"
                 />
               </div>
               {/* Category Name with Bottom Border */}

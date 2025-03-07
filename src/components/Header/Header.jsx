@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-white shadow-md py-4 px-6 md:px-12 relative">
+    <header className="w-full bg-white  py-4 px-6 md:px-12 relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo & Categories */}
         <div className="flex items-center gap-10">
@@ -86,9 +86,9 @@ const Header = () => {
                 </div>
                 {/* Right-side Image */}
                 <div className="w-70 h-70 flex flex-col gap-3 items-center justify-center bg-[#EE7370] text-white text-center font-medium rounded-full">
-                  <p className="text-[23px]">“Do anything, but </p>  
+                  <p className="text-[23px]">“Do anything, but </p>
                   <p className="text-[23px]"> let it produce joy.”</p>
-                  <p>-Walt Haltman</p>  
+                  <p>-Walt Haltman</p>
                 </div>
               </div>
             )}
@@ -101,17 +101,17 @@ const Header = () => {
             TEACH
           </span>
           <div className="hidden md:block w-[1px] h-6 bg-[#ABADB6]"></div>
-          <button className="text-[#2430A0] tracking-wide font-semibold border border-[#2430A0] px-5 py-1 rounded-full hover:bg-[#2430A0] hover:text-white transition">
+          <button className="text-[#2430A0] tracking-wide font-semibold border border-[#2430A0] px-5 py-1 rounded-full hover:bg-[#2430A0] hover:text-white transition cursor-pointer">
             LOGIN
           </button>
-          <button className="text-white bg-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full border border-transparent hover:bg-white hover:border-[#2430A0] hover:text-[#2430A0] transition">
+          <button className="text-white bg-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full border border-transparent hover:bg-white hover:border-[#2430A0] hover:text-[#2430A0] transition cursor-pointer">
             SIGNUP
           </button>
         </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-[#2430A0]"
+          className="md:hidden text-[#2430A0] cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <BiX size={28} /> : <BiMenu size={28} />}
@@ -179,10 +179,10 @@ const Header = () => {
           <span className="text-[#2430A0] text-sm tracking-widest font-semibold cursor-pointer">
             TEACH
           </span>
-          <button className="text-[#2430A0] border border-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full hover:bg-[#2430A0] hover:text-white transition">
+          <button className="text-[#2430A0] border border-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full hover:bg-[#2430A0] hover:text-white transition cursor-pointer">
             LOGIN
           </button>
-          <button className="text-white bg-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full border border-transparent hover:bg-white hover:border-[#2430A0] hover:text-[#2430A0] transition">
+          <button className="text-white bg-[#2430A0] tracking-wide font-semibold px-5 py-1 rounded-full border border-transparent hover:bg-white hover:border-[#2430A0] hover:text-[#2430A0] transition cursor-pointer">
             SIGNUP
           </button>
         </div>

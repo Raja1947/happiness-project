@@ -20,7 +20,7 @@ const reasonsData = [
   {
     id: 3,
     icon: globe,
-    description:  
+    description:
       "Sharing of interesting and unique hobbies from across the world",
   },
   {

@@ -8,14 +8,14 @@ import music from "../../assets/music.png";
 import root from "../../assets/root.png";
 
 const data = [
-    { name: "Language", img: language },
-    { name: "Cooking", img: cooking },
-    { name: "Music", img: music },
-    { name: "Arts & Craft", img: art },
-    { name: "Yoga", img: yoga },
-    { name: "Academics", img: sport },
-    { name: "Back to Roots", img: root },
-    { name: "Funteresting", img: color },
+  { name: "Language", img: language },
+  { name: "Cooking", img: cooking },
+  { name: "Music", img: music },
+  { name: "Arts & Craft", img: art },
+  { name: "Yoga", img: yoga },
+  { name: "Academics", img: sport },
+  { name: "Back to Roots", img: root },
+  { name: "Funteresting", img: color },
 ];
 
 export default data;
