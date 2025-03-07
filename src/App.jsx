@@ -1,4 +1,5 @@
 import './App.css'
+import Blog from './components/Blogs/Blog'
 import CategoryGrid from './components/Category/Category'
 import Classes from './components/Classes/Classes'
 import Community from './components/Community/Community'
@@ -24,6 +25,7 @@ function App() {
     <Testimonials/>
     <Team/>
     <Community/>
+    <Blog/>
    </div>
   )
 }
