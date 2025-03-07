@@ -4,6 +4,7 @@ import CategoryGrid from './components/Category/Category'
 import Classes from './components/Classes/Classes'
 import Community from './components/Community/Community'
 import Email from './components/EmailSubscription/Email'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Reason from './components/Reasons/Reason'
@@ -28,6 +29,7 @@ function App() {
     <Community/>
     <Blog/>
     <Email/>
+    <Footer/>
    </div>
   )
 }
