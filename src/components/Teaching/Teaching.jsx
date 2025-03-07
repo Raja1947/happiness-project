@@ -1,5 +1,5 @@
 import React from "react";
-import vector from "../../assets/vector.png";
+import vector from "../../assets/Vector.png";
 import icon from "../../assets/icon.png";
 import laptop from "../../assets/laptop.png";
 import teacher from "../../assets/Teacher.png";
