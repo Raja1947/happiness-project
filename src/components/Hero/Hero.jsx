@@ -1,11 +1,10 @@
 import React from "react";
 import hero from "../../assets/hero.png";
 import arrow from "../../assets/arrow-right-circle.png";
-// import msg from "../../assets/msg.png";
 
 const Hero = () => {
   return (
-    <div className=" w-full  py-10 px-6 md:px-12 overflow-hidden ">
+    <div className="w-full py-10 px-6 md:px-12 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
@@ -18,7 +17,7 @@ const Hero = () => {
             the world to people of all ages.
           </p>
 
-          {/* Input & Button Combined with Equal Space */}
+          {/* Input & Button */}
           <div className="mt-6 flex w-full max-w-md border border-[#51557D] rounded-full overflow-hidden">
             <input
               type="text"
@@ -32,20 +31,20 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1 flex justify-center">
+        {/* Right Image with Custom Background */}
+        <div className="relative flex-1 flex justify-center">
+          {/* Custom Background Shape */}
+          <div className="absolute -top-8 -left-8 w-60 h-60 md:w-80 md:h-80 bg-red-100 rounded-full z-0"></div>
+          <div className="absolute top-10 -right-5 w-48 h-48 md:w-64 md:h-64 bg-yellow-100 rounded-full z-0"></div>
+
+          {/* Main Image */}
           <img
             src={hero}
             alt="hero_img"
-            className="w-full max-w-[500px] md:max-w-[600px] h-auto object-cover"
+            className="relative z-10 w-full max-w-[500px] md:max-w-[600px] h-auto object-cover rounded-lg shadow-lg border-4 border-white"
           />
         </div>
       </div>
-
-      {/* Msg Icon (Fixed Position to Avoid Scroll) */}
-      {/* <div className="absolute bottom-5 right-5 sm:bottom-10 sm:right-10">
-        <img src={msg} alt="msg_icon" className="w-12 h-12 sm:w-16 sm:h-16 cursor-pointer" />
-      </div> */}
     </div>
   );
 };

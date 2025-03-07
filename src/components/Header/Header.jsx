@@ -4,9 +4,20 @@ import { BiMenu, BiX } from "react-icons/bi";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
+  const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
 
   const toggleCategories = () => {
-    setCategoriesOpen(!categoriesOpen);
+    if (window.innerWidth >= 768) {
+      // Only for desktop
+      setCategoriesOpen(!categoriesOpen);
+    }
+  };
+
+  const toggleMobileCategories = () => {
+    if (window.innerWidth < 768) {
+      // Only for mobile
+      setMobileCategoriesOpen(!mobileCategoriesOpen);
+    }
   };
 
   return (
@@ -18,18 +29,18 @@ const Header = () => {
             LOGO
           </h6>
 
-          {/* Categories with Dropdown */}
-          <div className="relative">
+          {/* Categories with Dropdown - Desktop Only */}
+          <div className="relative hidden md:block">
             <h6
-              className="hidden md:block text-[#2430A0] text-lg font-semibold cursor-pointer tracking-wider"
+              className="text-[#2430A0] text-lg font-semibold cursor-pointer tracking-wider"
               onClick={toggleCategories}
             >
               CATEGORIES ▾
             </h6>
 
-            {/* Dropdown Menu */}
+            {/* Dropdown Menu - Only for Desktop */}
             {categoriesOpen && (
-              <div className="absolute left-0 mt-2 w-screen max-w-[1100px] bg-[#E9EFEF] shadow-lg rounded-lg py-4 px-6 z-50 flex items-center gap-6">
+              <div className="absolute left-0 mt-2 w-screen max-w-[1100px] bg-[#d4d8fd] shadow-lg rounded-lg py-4 px-6 z-50 flex items-center justify-between gap-6">
                 {/* Categories List - Two Columns */}
                 <div className="grid grid-cols-2 text-[#2430A0] text-sm font-semibold w-1/3">
                   <ul>
@@ -74,12 +85,10 @@ const Header = () => {
                   </ul>
                 </div>
                 {/* Right-side Image */}
-                <div className="w-2/3 flex justify-center">
-                  <img
-                    src="https://tailwindcss.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook-promo.27d91093.png&w=256&q=75"
-                    alt="Category Illustration"
-                    className="w-32 h-32 object-cover rounded-md"
-                  />
+                <div className="w-70 h-70 flex flex-col gap-3 items-center justify-center bg-[#EE7370] text-white text-center font-medium rounded-full">
+                  <p className="text-[23px]">“Do anything, but </p>  
+                  <p className="text-[23px]"> let it produce joy.”</p>
+                  <p>-Walt Haltman</p>  
                 </div>
               </div>
             )}
@@ -114,13 +123,13 @@ const Header = () => {
         <div className="md:hidden flex flex-col items-center gap-4 mt-4 bg-white py-4 rounded-lg">
           <span
             className="text-[#2430A0] text-sm tracking-widest font-semibold cursor-pointer"
-            onClick={toggleCategories}
+            onClick={toggleMobileCategories}
           >
             CATEGORIES ▾
           </span>
 
-          {/* Mobile Dropdown */}
-          {categoriesOpen && (
+          {/* Mobile Dropdown - Only for Mobile */}
+          {mobileCategoriesOpen && (
             <div className="w-full bg-white shadow-md rounded-lg py-4 px-6">
               <div className="grid grid-cols-2 gap-4 text-[#2430A0] text-sm font-semibold">
                 <ul>
