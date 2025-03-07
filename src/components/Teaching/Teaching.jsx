@@ -7,10 +7,10 @@ import paint from "../../assets/Paint Brush.png";
 
 const Teaching = () => {
   return (
-    <div className=" w-full  py-10 px-6 md:px-12 overflow-hidden">
+    <div className="w-full py-10 px-6 md:px-12  overflow-hidden">
       {/* Vector Image */}
       <div className="flex justify-center">
-        <img src={vector} alt="vector" className="w-10" />
+        <img src={vector} alt="vector" className="w-8 md:w-10" />
       </div>
 
       {/* Heading Section */}
@@ -26,7 +26,7 @@ const Teaching = () => {
       {/* Features Grid */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto ">
         {/* Card 1 */}
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105  duration-300">
           <img src={paint} alt="paint" className="w-16 h-16 mb-4" />
           <p className="text-[20px] font-semibold text-[#2430A0]">
             Learn Something New
@@ -37,7 +37,7 @@ const Teaching = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105  duration-300">
           <img src={teacher} alt="teacher" className="w-16 h-16 mb-4" />
           <p className="text-[20px] font-semibold text-[#2430A0]">
             Skilled & Passionate Teachers
@@ -49,7 +49,7 @@ const Teaching = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105  duration-300">
           <img src={laptop} alt="laptop" className="w-16 h-16 mb-4" />
           <p className="text-[20px] font-semibold text-[#2430A0]">
             Take classes anytime, anywhere
@@ -61,9 +61,11 @@ const Teaching = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <div className="flex flex-col items-center text-center p-5 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105  duration-300">
           <img src={icon} alt="icon" className="w-16 h-16 mb-4" />
-          <p className="text-[20px] font-semibold text-[#2430A0]">Pay as you go</p>
+          <p className="text-[20px] font-semibold text-[#2430A0]">
+            Pay as you go
+          </p>
           <p className="text-[#51557D] text-[16px] mt-2">
             No enrollment fee for our classes. You only pay for the classes that
             you take. Your payment is Safe and secure with us.

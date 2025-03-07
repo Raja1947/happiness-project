@@ -5,7 +5,7 @@ import arrow from "../../assets/arrow-right-circle.png";
 
 const Hero = () => {
   return (
-    <div className=" w-full  py-10 px-6 md:px-12 overflow-hidden bg-red-200">
+    <div className=" w-full  py-10 px-6 md:px-12 overflow-hidden ">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
